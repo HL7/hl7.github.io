@@ -23,7 +23,7 @@ main:
   - title: "Repositories"
     url: /repositories/
   - title: "Documentation"
-    url: /docs/using_github/
+    url: /docs/
   - title: "IGs"
     url: /about/
 
@@ -33,9 +33,9 @@ docs:
   - title: HL7/fhir
     children:
       - title: "building the specification"
-        url: /docs/stylesheets/
+        url: /docs/building_the_spec/
       - title: "introduction to github"
-        url: /docs/javascript/
+        url: /docs/using_github/
   - title: CI/CD
     children:
       - title: "our approach"
