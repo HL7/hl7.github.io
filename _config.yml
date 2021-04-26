@@ -21,6 +21,7 @@ baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. 
 repository               : "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/fhir-logo.png"
+logo_text                : "hl7.github.io"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
