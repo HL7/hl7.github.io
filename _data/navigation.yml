@@ -49,10 +49,12 @@ docs:
   - title: validator-wrapper
     url: /docs/validator-wrapper
     children:
-      - title: "building the validator-wrapper"
+      - title: "building the validator"
         url: /docs/validator-wrapper/building
-      - title: "running the validator-wrapper"
+      - title: "running the validator"
         url: /docs/validator-wrapper/running
+      - title: "hosting the validator"
+        url: /docs/validator-wrapper/hosting
 #  - title: Extras
 #    children:
 #      - title: "contributing to fhir"
