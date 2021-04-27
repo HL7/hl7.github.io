@@ -1,6 +1,6 @@
 ---
 title: "validator-wrapper"
-permalink: /docs/building_the_validator_wrapper/
+permalink: /docs/validator-wrapper/building
 excerpt: "How to locally build the validator-wrapper."
 last_modified_at: 2021-04-27
 toc: true

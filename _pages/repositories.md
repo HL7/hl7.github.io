@@ -37,7 +37,7 @@ repo_row_hl7:
     title: "org.hl7.fhir.validator-wrapper"
     excerpt: "The CLI, desktop GUI, and standalone server implementation of the FHIR resource validator."
     repo_url: "https://github.com/hapifhir/org.hl7.fhir.validator-wrapper/"
-    docs_url: "https://github.com/hapifhir/org.hl7.fhir.validator-wrapper/wiki"
+    docs_url: "/docs/validator-wrapper"
 ---
 {% include feature_row %}
 

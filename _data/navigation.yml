@@ -47,11 +47,14 @@ docs:
 #      - title: "github releases"
 #        url: /docs/pages/
   - title: validator-wrapper
+    url: /docs/validator-wrapper
     children:
-      - title: "building the validator-wrapper"
-        url: /docs/building_the_validator_wrapper/
-      - title: "running the validator-wrapper"
-        url: /docs/running_the_validator_wrapper/
+      - title: "building the validator"
+        url: /docs/validator-wrapper/building
+      - title: "running the validator"
+        url: /docs/validator-wrapper/running
+      - title: "hosting the validator"
+        url: /docs/validator-wrapper/hosting
 #  - title: Extras
 #    children:
 #      - title: "contributing to fhir"

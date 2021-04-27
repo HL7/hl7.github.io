@@ -1,6 +1,6 @@
 ---
 title: "validator-wrapper"
-permalink: /docs/running_the_validator_wrapper/
+permalink: /docs/validator-wrapper/running
 excerpt: "How to locally run the validator-wrapper."
 last_modified_at: 2021-04-27
 toc: true
