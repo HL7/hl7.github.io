@@ -24,8 +24,8 @@ main:
     url: /repositories/
   - title: "Documentation"
     url: /docs/
-  - title: "IGs"
-    url: /about/
+#  - title: "IGs"
+#    url: /about/
 
 
 # documentation links
@@ -36,30 +36,30 @@ docs:
         url: /docs/building_the_spec/
       - title: "introduction to github"
         url: /docs/using_github/
-  - title: CI/CD
-    children:
-      - title: "our approach"
-        url: /temp/
-      - title: "azure pipelines"
-        url: /docs/posts/
-      - title: "oss sonatype"
-        url: /docs/pages/
-      - title: "github releases"
-        url: /docs/pages/
+#  - title: CI/CD
+#    children:
+#      - title: "our approach"
+#        url: /temp/
+#      - title: "azure pipelines"
+#        url: /docs/posts/
+#      - title: "oss sonatype"
+#        url: /docs/pages/
+#      - title: "github releases"
+#        url: /docs/pages/
   - title: validator-wrapper
     children:
       - title: "building the validator-wrapper"
-        url: /docs/configuration/
+        url: /docs/building_the_validator_wrapper/
       - title: "running the validator-wrapper"
-        url: /docs/overriding-theme-defaults/
-  - title: Extras
-    children:
-      - title: "contributing to fhir"
-        url: /docs/history/
-      - title: "license"
-        url: /docs/contributing/
-      - title: "about"
-        url: /terms/
+        url: /docs/running_the_validator_wrapper/
+#  - title: Extras
+#    children:
+#      - title: "contributing to fhir"
+#        url: /docs/history/
+#      - title: "license"
+#        url: /docs/contributing/
+#      - title: "about"
+#        url: /terms/
 
 # sidebar navigation list sample
 sidebar-sample:
