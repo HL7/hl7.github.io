@@ -44,7 +44,7 @@ In the Clean window, select the `Clean all projects` option, and the `Start a bu
 
 ## IntelliJ Users
 
-1. Ensure you have the latest version of Intellij IDEA Community Edition installed. Check the current version on their [downloads page][https://www.jetbrains.com/idea/download/].
+1. Ensure you have the latest version of Intellij IDEA Community Edition installed. Check the current version on their [downloads page][Link-IntelliJIdeaDownload].
 2. Ensure you have the Java 8 JDK installed on your system, and your JAVA_HOME environment variable pointed to the Java 8 SDK.
    If you do not have the Java 8 JDK installed, please follow the instructions [here][Link-OpenJDKInstall].
 3. You will need to install the lombok plugin. Follow the instructions [here][Link-InstallLombokIntelliJ].
