@@ -51,7 +51,7 @@ In the Clean window, select the `Clean all projects` option, and the `Start a bu
 
 This should enable the building and running of tests in IntelliJ.
 
-## Apache IvyDE Users
+## Apache NetBeans Users
 
 1. Follow the steps in the Intellij Users section above.
 
