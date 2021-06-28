@@ -59,6 +59,12 @@ docs:
         url: /docs/validator-wrapper/running
       - title: "hosting the validator"
         url: /docs/validator-wrapper/hosting
+  - title: ig publisher
+    children:
+      - title: "publishing packages"
+        url: /docs/publishing_packages
+      - title: "publishing templates"
+        url: /docs/publishing_templates
 #  - title: Extras
 #    children:
 #      - title: "contributing to fhir"
