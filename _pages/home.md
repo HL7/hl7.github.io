@@ -11,7 +11,7 @@ featured_links:
       repo_url: "https://fhir.github.io/auto-ig-builder/builds.html"
     - image_path: /assets/images/validator_preview.png
       title: "Try the Online Validator"
-      repo_url: "http://www.fhirvalidator.org"
+      repo_url: "http://www.validator.fhir.org"
 ---
 
 {% include feature_row %}
