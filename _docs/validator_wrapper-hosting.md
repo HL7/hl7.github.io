@@ -166,6 +166,7 @@ server {
 
 ### Setup docker-compose
 Previously, we set up our docker instance to run with an exposed port, and restart every time the host machine reboots. This can also be done using [docker-compose][Link-DockerCompose].
+
 1. In the root directory, create a file named `docker-compose.yml`
 2. In this file, we want to define the image name, tell it to restart always, and set the exposed port. For example, here is the docker-compose.yml file we use in the validator-wrapper project:
 
@@ -182,11 +183,12 @@ services:
 3. Compile your project, and publish the new docker image containing the docker-compose.yml file.
 4. SSH into the compute engine VM, either through the [Google Cloud Console][Link-GoogleCloudConsole], or by installing the [Google Cloud SDK][Link-GoogleCloudSDK] on your local machine.
 5. Install docker-compose `sudo apt install docker-compose`
-6. Stop your currently running image
-* Execute `docker ps` to see the list of running images
-* From that list, find the name of your image, and stop it by running `docker stop <image name here>`
-7. Start the image using docker-compose by running `docker-compose up --build -d`
-8. Verify the image is running by executing `docker ps`
+6. Stop your currently running image.
+   _Be mindful not to start images with both docker and docker-compose. If an image already exists and occupies the required port, a new image may start without obvious errors, but the old image will still be providing the website._
+   * Execute `docker ps` to see the list of running images
+   * From that list, find the name of your image, and stop it by running `docker stop <image name here>`
+8. Start the image using docker-compose by running `docker-compose up --build -d`
+9. Verify the image is running by executing `docker ps`
 
 ### Automating Updates
 We don't want to have to _manually_ go in and type:
