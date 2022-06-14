@@ -31,4 +31,4 @@ Once you are satisfied with your changes locally, make a [Pull Request](https://
 
 ## Contributing
 
-This repository and the hl7.github.io website is maintained by [David Otasek](https://github.com/dotasek/) on behalf of the FHIR community.
+This repository and the hl7.github.io website is maintained by [David Otasek](https://github.com/dotasek/) and [Mark Iantorno](https://github.com/markiantorno) on behalf of the FHIR community.
