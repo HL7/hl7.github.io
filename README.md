@@ -12,7 +12,7 @@ You will need to have the following software installed to preview the generated 
 * [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/)
 * Jekyll ([installation instructions](https://jekyllrb.com/docs/installation/))
 
-## Build
+## Building this Project
 
 ### Developing locally
 
