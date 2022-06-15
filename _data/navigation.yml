@@ -36,16 +36,6 @@ docs:
         url: /docs/building_the_spec/
       - title: "introduction to github"
         url: /docs/using_github/
-#  - title: CI/CD
-#    children:
-#      - title: "our approach"
-#        url: /temp/
-#      - title: "azure pipelines"
-#        url: /docs/posts/
-#      - title: "oss sonatype"
-#        url: /docs/pages/
-#      - title: "github releases"
-#        url: /docs/pages/
   - title: org.hl7.fhir.core
     children:
       - title: "building the core libraries"
@@ -65,6 +55,17 @@ docs:
         url: /docs/publishing_packages
       - title: "publishing templates"
         url: /docs/publishing_templates
+  - title: CI/CD
+    url: /docs/ci-cd
+    children:
+      - title: "Debugging Pipeline Failures"
+        url: /docs/ci-cd-debugging
+    #      - title: "azure pipelines"
+    #        url: /docs/posts/
+    #      - title: "oss sonatype"
+    #        url: /docs/pages/
+    #      - title: "github releases"
+    #        url: /docs/pages/
 #  - title: Extras
 #    children:
 #      - title: "contributing to fhir"
