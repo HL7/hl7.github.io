@@ -1,7 +1,7 @@
 ---
-title: "CI/CD"
+title: "Debugging Failing CI/CD Builds"
 permalink: /docs/ci-cd-debugging
-excerpt: "Continuous Integration and Deployment."
+excerpt: "Debugging Failing CI/CD Builds"
 last_modified_at: 2022-06-15
 toc: true
 ---

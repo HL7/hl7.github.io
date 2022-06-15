@@ -58,14 +58,14 @@ docs:
   - title: CI/CD
     url: /docs/ci-cd
     children:
-      - title: "Debugging Pipeline Failures"
+      - title: "detailed release instructions"
+        url: /docs/ci-cd-building-release
+      - title: "publishing release binaries"
+        url: /docs/ci-cd-publishing-binaries
+      - title: "manually triggering a pipeline"
+        url: /docs/ci-cd-manually-triggering
+      - title: "debugging pipeline failures"
         url: /docs/ci-cd-debugging
-    #      - title: "azure pipelines"
-    #        url: /docs/posts/
-    #      - title: "oss sonatype"
-    #        url: /docs/pages/
-    #      - title: "github releases"
-    #        url: /docs/pages/
 #  - title: Extras
 #    children:
 #      - title: "contributing to fhir"
