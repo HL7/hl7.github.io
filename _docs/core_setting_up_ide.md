@@ -2,7 +2,7 @@
 title: "Setting up your IDE to build org.hl7.fhir.core"
 permalink: /docs/core/ide
 excerpt: "How to set up your local IDE to build the core."
-last_modified_at: 2021-04-27
+last_modified_at: 2022-06-15
 toc: true
 ---
 
