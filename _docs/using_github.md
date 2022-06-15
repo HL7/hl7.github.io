@@ -1,7 +1,7 @@
 ---
 title: "Using Github"
 permalink: /docs/using_github/
-excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
+excerpt: "How to contribute to FHIR using Github"
 last_modified_at: 2021-04-26
 toc: true
 ---
