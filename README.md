@@ -3,7 +3,9 @@
 
 This is the [Jekyll](https://jekyllrb.com) source code used to generate http://hl7.github.io, the developer landing site for HL7 FHIR core library projects.
 
-## Prerequisites
+## Building this Project
+
+### Prerequisites
 
 You will need to have the following software installed to preview the generated website.
 
@@ -11,8 +13,6 @@ You will need to have the following software installed to preview the generated 
 * Ruby Gems ([download](https://rubygems.org/pages/download))
 * [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/)
 * Jekyll ([installation instructions](https://jekyllrb.com/docs/installation/))
-
-## Building this Project
 
 ### Developing locally
 
@@ -22,7 +22,7 @@ Navigate to the root directory of the project. The following command will make a
 bundle exec jekyll serve
 ``` 
 
-### Deploying to hl7.github.io
+## Deploying to hl7.github.io
 
 Once you are satisfied with your changes locally, make a [Pull Request](https://github.com/HL7/hl7.github.io/compare) to this project. If your Pull Request is approved, once it is merged into the main branch, the changes will automatically be deployed to hl7.github.io.
 
