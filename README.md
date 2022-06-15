@@ -1,8 +1,6 @@
 
 # hl7.github.io
 
-## Description
-
 This is the [Jekyll](https://jekyllrb.com) source code used to generate http://hl7.github.io, the developer landing site for HL7 FHIR core library projects.
 
 ## Prerequisites
