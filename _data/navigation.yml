@@ -66,6 +66,8 @@ docs:
         url: /docs/ci-cd-manually-triggering
       - title: "debugging pipeline failures"
         url: /docs/ci-cd-debugging
+  - title: hapi.fhir.org
+    url: /docs/hapi_fhir_org
 #  - title: Extras
 #    children:
 #      - title: "contributing to fhir"

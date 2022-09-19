@@ -18,3 +18,8 @@ end
 
 gem "minimal-mistakes-jekyll"
 gem "webrick", "~> 1.7"
+
+source 'https://rubygems.org'
+gem 'nokogiri'
+gem 'rack', '~> 2.2.4'
+gem 'rspec'
