@@ -21,7 +21,7 @@ To generate the jar containing all resources locally:
    `validator-wrapper-jvm-{$project-version}.jar`
 
 
-[Link-ValidatorWrapperWeb]: https://fhirvalidator.org
+[Link-ValidatorWrapperWeb]: https://validator.fhir.org/
 [Link-GradleWebpage]: https://gradle.org/
 [Link-GradleKotlinDSLPrimer]: https://docs.gradle.org/current/userguide/kotlin_dsl.html
 [Link-GradleInstall]: https://gradle.org/install/

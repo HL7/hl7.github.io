@@ -31,7 +31,7 @@ not be booted.
 {: .notice--warning}
 
 
-[Link-ValidatorWrapperWeb]: https://fhirvalidator.org
+[Link-ValidatorWrapperWeb]: https://validator.fhir.org/
 [Link-GradleWebpage]: https://gradle.org/
 [Link-GradleKotlinDSLPrimer]: https://docs.gradle.org/current/userguide/kotlin_dsl.html
 [Link-GradleInstall]: https://gradle.org/install/
