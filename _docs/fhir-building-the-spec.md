@@ -1,15 +1,24 @@
 ---
 title: "Building the Specification"
-permalink: /docs/building_the_spec/
+permalink: /docs/fhir-building-the-spec/
 excerpt: "How to local build the fhir specification."
 last_modified_at: 2021-04-26
 toc: true
 ---
 
+## Prerequisites
+
+{% include prerequisites-java.md %}
+
+{% include prerequisites-git.md project-git-link='https://github.com/HL7/fhir.git' %}
+
 ## Publishing Locally
 
-1. Run `./gradlew publish` from the command line
-2. Wait for it to finish (~20 minutes)
+This project uses the [Gradle Wrapper][Link-GradleWrapper] to build. Gradle Wrapper will take care of downloading an appropriate version of Gradle to build with.
+
+1. Be sure you have at least 16 GB of RAM
+2. Run `./gradlew publish` (Mac or Linux) or `./gradlew.bat publish` (Windows) from the command line
+3. Wait for it to finish (~20 minutes)
 
 See also: [FHIR Build Process][Link-Wiki]
 
@@ -53,6 +62,7 @@ Once merged to master, the [master branch pipeline][Link-AzureMasterPipeline] ru
 The only exception to the above is the build for R4B. The [R4B pipline][Link-AzureR4BPipeline] detects changes to the [R4B branch][Link-R4BGithub] in github, and
 publishes any changes from that branch to [build.fhir.org/R4B][Link-BuildFhirOrgR4B].
 
+[Link-GradleWrapper]: https://docs.gradle.org/current/userguide/gradle_wrapper.html
 [Link-AzureMasterPipeline]: https://dev.azure.com/fhir-pipelines/fhir-publisher/_build/latest?definitionId=44&branchName=refs%2Fpull%2F1084%2Fmerge
 [Link-AzureR4BPipeline]: https://dev.azure.com/fhir-pipelines/fhir-publisher/_build/latest?definitionId=46&branchName=R4B
 [Link-AzurePRPipeline]: https://dev.azure.com/fhir-pipelines/fhir-publisher/_build/latest?definitionId=42&branchName=refs%2Fpull%2F1084%2Fmerge

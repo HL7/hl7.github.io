@@ -33,9 +33,9 @@ docs:
   - title: HL7/fhir
     children:
       - title: "building the specification"
-        url: /docs/building_the_spec/
-      - title: "introduction to github"
-        url: /docs/using_github/
+        url: /docs/fhir-building-the-spec/
+      - title: "fhir github branches"
+        url: /docs/fhir-github-branches/
   - title: org.hl7.fhir.core
     children:
       - title: "building the core libraries"
