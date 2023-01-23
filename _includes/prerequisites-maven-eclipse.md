@@ -10,7 +10,8 @@
     * Click `Next`
     * Under `Select Root Directory`, pick the `{{ include.project-name }}` directory (the root of the project)
     * Click Finish
-5. If you are prompted to install the `m2e-connector plugin`, you should do so.
+5. If you are prompted to install the `m2e-connector plugin`, or the `maven-checkstyle-plugin plugin connector`, you should do so, and approve any necessary and valid code signings. You may be asked to restart Eclipse at this point, and you should do so.
+
 
 This should import the project, and you should be able to build and run of test in the Eclipse IDE. To verify, in the `Project` drop-down menu, select `Clean...`.
 In the Clean window, select the `Clean all projects` option, and the `Start a build immediately` and `Build the entire workspace` options as well. Press `Clean` to run a full build.

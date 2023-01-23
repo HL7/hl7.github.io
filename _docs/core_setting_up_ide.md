@@ -14,10 +14,9 @@ The [core][Link-GithubCoreProject] uses a variety of tools and plugins during it
 
 {% include prerequisites-git.md project-git-link='https://github.com/hapifhir/org.hl7.fhir.core.git' %}
 
-{% include prerequisites-eclipse-maven.md project-name='org.hl7.fhir.core' %}
+{% include prerequisites-maven-eclipse.md project-name='org.hl7.fhir.core' %}
 
-{% include prerequisites-idea-maven.md project-name='org.hl7.fhir.core' %}
-
+{% include prerequisites-maven-idea.md project-name='org.hl7.fhir.core' %}
 
 
 [Link-GithubCoreProject]: https://github.com/hapifhir/org.hl7.fhir.core
