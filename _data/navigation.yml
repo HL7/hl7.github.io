@@ -30,6 +30,11 @@ main:
 
 # documentation links
 docs:
+  - title: Developing HL7 Core Libraries
+    url: /docs/core-libs/overview
+    children:
+      - title: "Working with multiple projects"
+        url: /docs/core-libs/multiple-projects
   - title: HL7/fhir
     children:
       - title: "building the specification"
