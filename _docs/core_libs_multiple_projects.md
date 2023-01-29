@@ -10,6 +10,13 @@ Though individual projects in the HL7 core libraries can be worked on independen
 
 ## Multiple Projects in IntelliJ IDEA
 
+### Prerequisites
+
+1. Ensure you have the latest version of Intellij IDEA Community Edition installed. Check the current version on their [downloads page][Link-IntelliJIdeaDownload].
+2. Ensure you have the necessary version of Java to build each project. Check individual project documentation for details.
+3. Some projects use [lombok][Link-ProjectLombok] annotations to help reduce lines of code in some of the larger classes. For these, you will need to install the lombok plugin. Follow the instructions [here][Link-InstallLombokIntelliJ].
+
+
 ### Creating a multi-project workspace
 To load multiple projects in IntelliJ IDEA, you can use a single parent directory to contain multiple projects. To illustrate how this is done, we will use the example of loading, both the [org.hl7.fhir.core](/docs/core/ide) project and the [kindling]() project in the same workspace.
 
@@ -48,6 +55,7 @@ You should now see both your projects in the `Project Files` panel. Though these
 
 Projects must be added or linked depending on the project build system used for each project. `org.hl7.fhir.core` is a Maven project, and `kindling` is a Gradle project. The `README.md` file in each project directory will describe the build system used. 
 
+
 #### Maven Projects
 
 To add a Maven project such as `org.hl7.fhir.core` in IntelliJ IDEA, use following steps:
@@ -74,7 +82,7 @@ For details about building and using different features of each project, read th
 
 #### Managing dependencies
 
-Working with projects that are dependent upon each other can often lead to frustration. To minimize this, the following steps can be used verify that the code you are working on is in fact being used by projects dependent on it.
+Working with projects that are dependent upon each other can often be frustrating. To minimize this, the following steps can be used verify that the code you are working on is in fact being used by projects dependent on it.
 
 - Ensure that you are working with a consistent SNAPSHOT version of each project in your workspace. For example, if you are working with version `5.6.93-SNAPSHOT` of the `org.hl7.fhir.core` project, you should ensure that dependent projects such as `kindling`, `fhir-publisher`, etc. are all using this version.
 - Ensure that you have built and installed projects that other projects may be dependent upon. This can be done using the command line, or by using the `Maven` and `Gradle` panels in IDEA.
@@ -88,3 +96,9 @@ Working with projects that are dependent upon each other can often lead to frust
    - Find your project in the `Gradle` panel.
    - Right click on your project and select `Refresh Gradle Dependencies`
    - Alternatively, in the terminal you can build with the following options: `gradlew build --refresh-dependencies`
+
+[Link-IntelliJIdeaDownload]: https://www.jetbrains.com/idea/download/
+[Link-ProjectLombok]: https://projectlombok.org/
+[Link-InstallLombokIntelliJ]: https://projectlombok.org/setup/intellij
+
+## Multiple Projects in IBM Eclipse

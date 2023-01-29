@@ -15,6 +15,6 @@ This should enable the building and running of tests in IntelliJ. To verify, in 
 
 1. Follow the steps in the Intellij Users section above.
 
-[Link-ProjectLombok]: https://projectlombok.org/
 [Link-IntelliJIdeaDownload]: https://www.jetbrains.com/idea/download/
+[Link-ProjectLombok]: https://projectlombok.org/
 [Link-InstallLombokIntelliJ]: https://projectlombok.org/setup/intellij
