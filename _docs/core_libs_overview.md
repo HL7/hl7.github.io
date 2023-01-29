@@ -20,13 +20,13 @@ This project contains cases that can be used to test FHIR reference implementati
 ### Repository
 [https://github.com/FHIR/fhir-test-cases/](https://github.com/FHIR/fhir-test-cases/)
 
-### Downstream Projects
+### Dependent Projects
 - [org.hl7.fhir.core](#orghl7fhircore)
 
 
 ## org.hl7.fhir.core
 
-This is the java core object handling code. It includes Java models of all FHIR resources, as well as utilities (including the FHIR validator) for the FHIR specification. The models and utilities in this code are imported as a dependencies and used for several downstream FHIR projects. This project uses the test cases definied in [fhir-test-cases](#fhir-test-cases).
+This is the java core object handling code. It includes Java models of all FHIR resources, as well as utilities (including the FHIR validator) for the FHIR specification. The models and utilities in this code are imported as a dependencies and used for several dependent FHIR projects. This project uses the test cases definied in [fhir-test-cases](#fhir-test-cases).
 
 ### Repository
 [https://github.com/hapifhir/org.hl7.fhir.core](https://github.com/hapifhir/org.hl7.fhir.core)
@@ -34,7 +34,7 @@ This is the java core object handling code. It includes Java models of all FHIR 
 ### Dependencies
 - [fhir-test-cases](#fhir-test-cases)
 
-### Downstream Projects
+### Dependent Projects
 - [validator-wrapper](#validator-wrapper)
 - [fhir-ig-publisher](#fhir-ig-publisher)
 - [kindling](#kindling) 
@@ -71,7 +71,7 @@ This is the core publishing code for the HL7 FHIR specification itself. The jar 
 ### Dependencies
 - [org.hl7.fhir.core](#orghl7fhircore)
 
-### Downstream Projects
+### Dependent Projects
 - [HL7/FHIR](#hl7-fhir)
 
 ## HL7/FHIR
