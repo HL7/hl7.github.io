@@ -35,6 +35,10 @@ docs:
     children:
       - title: "working with multiple projects"
         url: /docs/core-libs/multiple-projects
+  - title: fhir-test-cases
+    children:
+      - title: "getting started"
+        url: /docs/fhir-test-cases/getting-started
   - title: org.hl7.fhir.core
     children:
       - title: "getting started"
@@ -50,6 +54,8 @@ docs:
   - title: validator-wrapper
     url: /docs/validator-wrapper
     children:
+      - title: "getting started"
+        url: /docs/validator-wrapper/getting-started
       - title: "building the validator"
         url: /docs/validator-wrapper/building
       - title: "running the validator"

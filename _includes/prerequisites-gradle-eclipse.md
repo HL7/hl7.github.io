@@ -1,10 +1,10 @@
 ## Eclipse Users
 
-1. Ensure you have the latest version of Eclipse installed. Check the current version on their [downloads page][Link-EclipseDownload].
-2. This project uses [lombok][Link-ProjectLombok] annotations to help reduce lines of code in some of the larger classes.
-   This plugin needs to be manually added to Eclipse. Please follow the [instructions on their website][Link-InstallLombokEclipse] to set this up.
-3. Run eclipse and select your Eclipse workspace.
-4. Follow these steps to import the cloned project:
+1. Ensure you have the latest version of Eclipse installed. Check the current version on their [downloads page][Link-EclipseDownload].{% if include.project-is-lombok != "false" %} 
+1. This project uses [lombok][Link-ProjectLombok] annotations to help reduce lines of code in some of the larger classes.
+   This plugin needs to be manually added to Eclipse. Please follow the [instructions on their website][Link-InstallLombokEclipse] to set this up. {% endif %}
+1. Run eclipse and select your Eclipse workspace.
+1. Follow these steps to import the cloned project:
     * From the main menu, select `File -> Import...`
     * Select `Gradle -> Existing Gradle Project`
     * Click `Next`
