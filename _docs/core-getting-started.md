@@ -6,7 +6,7 @@ last_modified_at: 2022-06-15
 toc: true
 ---
 
-The [core][Link-GithubCoreProject] uses a variety of tools and plugins during its build process. This sometimes requires users to make changes to their IDE so that they can compile.
+The [core][Link-GithubProject] uses a variety of tools and plugins during its build process. This sometimes requires users to make changes to their IDE so that they can compile.
 
 ## Prerequisites
 
@@ -19,6 +19,6 @@ The [core][Link-GithubCoreProject] uses a variety of tools and plugins during it
 {% include prerequisites-maven-eclipse.md project-name='org.hl7.fhir.core' project-directory='org.hl7.fhir.core' %}
 
 
-[Link-GithubCoreProject]: https://github.com/hapifhir/org.hl7.fhir.core
+[Link-GithubProject]: https://github.com/hapifhir/org.hl7.fhir.core
 [Link-OpenJDKInstall]: https://openjdk.java.net/install/
 

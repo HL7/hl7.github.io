@@ -41,6 +41,8 @@ docs:
         url: /docs/core/getting-started
   - title: ig publisher
     children:
+      - title: "getting started"
+        url: /docs/ig_publisher/getting-started
       - title: "publishing packages"
         url: /docs/ig_publisher/publishing-packages
       - title: "publishing templates"
