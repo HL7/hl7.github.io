@@ -1,6 +1,6 @@
 ---
-title: "Using Github"
-permalink: /docs/using_github/
+title: "FHIR GitHub Branches"
+permalink: /docs/fhir/github-branches/
 excerpt: "How to contribute to FHIR using Github"
 last_modified_at: 2021-04-26
 toc: true

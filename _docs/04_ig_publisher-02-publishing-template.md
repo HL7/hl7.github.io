@@ -1,6 +1,6 @@
 ---
 title: "Publishing Templates"
-permalink: /docs/publishing_templates/
+permalink: /docs/ig_publisher/publishing-templates
 excerpt: "How to publish templates using the IG-Publisher."
 last_modified_at: 2021-06-23
 toc: true

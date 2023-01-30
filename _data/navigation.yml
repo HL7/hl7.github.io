@@ -30,31 +30,50 @@ main:
 
 # documentation links
 docs:
-  - title: HL7/fhir
+  - title: HL7 Core Projects Overview
+    url: /docs/core-libs/overview
     children:
-      - title: "building the specification"
-        url: /docs/building_the_spec/
-      - title: "introduction to github"
-        url: /docs/using_github/
+      - title: "working with multiple projects"
+        url: /docs/core-libs/multiple-projects
+  - title: fhir-test-cases
+    children:
+      - title: "getting started"
+        url: /docs/fhir-test-cases/getting-started
   - title: org.hl7.fhir.core
     children:
-      - title: "building the core libraries"
-        url: /docs/core/ide
+      - title: "getting started"
+        url: /docs/core/getting-started
+  - title: ig publisher
+    children:
+      - title: "getting started"
+        url: /docs/ig_publisher/getting-started
+      - title: "publishing packages"
+        url: /docs/ig_publisher/publishing-packages
+      - title: "publishing templates"
+        url: /docs/ig_publisher/publishing-templates
   - title: validator-wrapper
     url: /docs/validator-wrapper
     children:
+      - title: "getting started"
+        url: /docs/validator-wrapper/getting-started
       - title: "building the validator"
         url: /docs/validator-wrapper/building
       - title: "running the validator"
         url: /docs/validator-wrapper/running
       - title: "hosting the validator"
         url: /docs/validator-wrapper/hosting
-  - title: ig publisher
+  - title: kindling
     children:
-      - title: "publishing packages"
-        url: /docs/publishing_packages
-      - title: "publishing templates"
-        url: /docs/publishing_templates
+      - title: "getting started"
+        url: /docs/kindling/getting-started
+  - title: HL7/fhir
+    children:
+      - title: "getting started"
+        url: /docs/fhir/getting-started/
+      - title: "building the specification"
+        url: /docs/fhir/building-the-spec/
+      - title: "fhir github branches"
+        url: /docs/fhir/github-branches/
   - title: CI/CD
     url: /docs/ci-cd
     children:
