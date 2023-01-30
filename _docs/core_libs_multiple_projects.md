@@ -6,7 +6,7 @@ last_modified_at: 2023-01-27
 toc: true
 ---
 
-Though individual projects in the HL7 core libraries can be worked on independently, certain projects are dependent on others, and it may be necessary to do development work with several projects at the same time. To see which projects depend on each other, read the [Overview of the HL7 Core Libraries](/docs/core-libs/overview).
+Though individual projects in the HL7 core libraries can be worked on independently, certain projects are dependent on others, and it may be necessary to do development work with several projects at the same time. To see which projects depend on each other, read the [Overview of the HL7 Core Projects](/docs/core-libs/overview).
 
 ## Multiple Projects in IntelliJ IDEA
 

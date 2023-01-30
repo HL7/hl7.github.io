@@ -1,16 +1,10 @@
 ---
 title: "Building the Specification"
-permalink: /docs/fhir-building-the-spec/
+permalink: /docs/fhir/building-the-spec/
 excerpt: "How to local build the fhir specification."
 last_modified_at: 2021-04-26
 toc: true
 ---
-
-## Prerequisites
-
-{% include prerequisites-java.md %}
-
-{% include prerequisites-git.md project-git-link='https://github.com/HL7/fhir.git' %}
 
 ## Publishing Locally
 

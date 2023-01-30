@@ -8,7 +8,7 @@
     * From the main menu, select `File -> Import...`
     * Select `Maven -> Existing Maven Projects`
     * Click `Next`
-    * Under `Select Root Directory`, pick the `{{ include.project-name }}` directory (the root of the project)
+    * Under `Select Root Directory`, pick the `{{ include.project-directory }}` directory (the root of the project)
     * Click Finish
 5. If you are prompted to install the `m2e-connector plugin`, or the `maven-checkstyle-plugin plugin connector`, you should do so, and approve any necessary and valid code signings. You may be asked to restart Eclipse at this point, and you should do so.
 

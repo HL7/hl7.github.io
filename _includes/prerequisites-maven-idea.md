@@ -5,7 +5,7 @@
    You will need to install the lombok plugin. Follow the instructions [here][Link-InstallLombokIntelliJ].
 3. Follow these steps to import the cloned project:
    * From the main menu, select `File -> Open...`
-   * In the browser dialog pick the `{{ include.project-name }}` directory (the root of the project)
+   * In the browser dialog pick the `{{ include.project-directory }}` directory (the root of the project)
    * If prompted whether to `Trust and Open Project '{{ include.project-name }}'` select `Trust Project`
    * Select which window you would like to open the project in.
 

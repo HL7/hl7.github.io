@@ -1,6 +1,6 @@
 ---
 title: "Publishing Packages"
-permalink: /docs/publishing_packages/
+permalink: /docs/ig_publisher/publishing-packages/
 excerpt: "How to publish packages using the IG-Publisher."
 last_modified_at: 2021-06-23
 toc: true

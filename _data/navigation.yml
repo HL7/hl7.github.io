@@ -30,21 +30,21 @@ main:
 
 # documentation links
 docs:
-  - title: Developing HL7 Core Libraries
+  - title: HL7 Core Projects Overview
     url: /docs/core-libs/overview
     children:
-      - title: "Working with multiple projects"
+      - title: "working with multiple projects"
         url: /docs/core-libs/multiple-projects
-  - title: HL7/fhir
-    children:
-      - title: "building the specification"
-        url: /docs/fhir-building-the-spec/
-      - title: "fhir github branches"
-        url: /docs/fhir-github-branches/
   - title: org.hl7.fhir.core
     children:
-      - title: "building the core libraries"
-        url: /docs/core/ide
+      - title: "getting started"
+        url: /docs/core/getting-started
+  - title: ig publisher
+    children:
+      - title: "publishing packages"
+        url: /docs/ig_publisher/publishing-packages
+      - title: "publishing templates"
+        url: /docs/ig_publisher/publishing-templates
   - title: validator-wrapper
     url: /docs/validator-wrapper
     children:
@@ -54,12 +54,14 @@ docs:
         url: /docs/validator-wrapper/running
       - title: "hosting the validator"
         url: /docs/validator-wrapper/hosting
-  - title: ig publisher
+  - title: HL7/fhir
     children:
-      - title: "publishing packages"
-        url: /docs/publishing_packages
-      - title: "publishing templates"
-        url: /docs/publishing_templates
+      - title: "getting started"
+        url: /docs/fhir/getting-started/
+      - title: "building the specification"
+        url: /docs/fhir/building-the-spec/
+      - title: "fhir github branches"
+        url: /docs/fhir/github-branches/
   - title: CI/CD
     url: /docs/ci-cd
     children:

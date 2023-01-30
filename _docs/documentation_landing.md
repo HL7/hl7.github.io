@@ -10,7 +10,7 @@ toc: false
 
 On the left you'll see a list of useful documentation related to the core tools and repositories.
 
-It is recommended that you explore the [Developing HL7 Core Libraries](/docs/core-libs/overview) section to get oriented with what purpose each individual project serves.
+It is recommended that you explore the [Overview of the HL7 Core Projects](/docs/core-libs/overview) section to get oriented with what purpose each individual project serves.
 
 #### Useful Links
 
