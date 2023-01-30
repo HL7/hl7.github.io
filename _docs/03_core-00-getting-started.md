@@ -6,7 +6,11 @@ last_modified_at: 2022-06-15
 toc: true
 ---
 
-The [core][Link-GithubProject] uses a variety of tools and plugins during its build process. This sometimes requires users to make changes to their IDE so that they can compile.
+## Overview
+
+{% include overview-org-hl7-fhir-core.md %}
+
+This project uses a variety of tools and plugins during its build process. This sometimes requires users to make changes to their IDE so that they can compile.
 
 ## Prerequisites
 

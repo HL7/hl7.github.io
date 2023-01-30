@@ -5,7 +5,12 @@ excerpt: "How to set up your local IDE to build the FHIR IG Publisher."
 last_modified_at: 2021-06-23
 toc: true
 ---
-The [FHIR IG Publisher][Link-GithubProject] uses a variety of tools and plugins during its build process. This sometimes requires users to install software and make changes to their IDE so that they can compile.
+
+## Overview
+
+{% include overview-fhir-ig-publisher.md %}
+
+This project uses a variety of tools and plugins during its build process. This sometimes requires users to install software and make changes to their IDE so that they can compile.
 
 ## Prerequisites
 

@@ -11,7 +11,7 @@ toc: true
 
 ![fhir-dependency-chart](../../assets/images/fhir-dependency-chart.png)
 
-*Core FHIR Projects* : [fhir-test-cases](#fhir-test-cases) &#124; [org.hl7.fhir.core](#orghl7fhircore)  &#124; [fhir-ig-publisher](#fhir-ig-publisher) &#124; [validator-wrapper](#validator-wrapper) &#124; [kindling](#kindling) &#124; [HL7/FHIR](#hl7-fhir) &#124; [HAPI-FHIR](#hapi-fhir) &#124; [IG registry](#ig-registry)
+*Core FHIR Projects* : [fhir-test-cases](#fhir-test-cases) &#124; [org.hl7.fhir.core](#orghl7fhircore)  &#124; [fhir-ig-publisher](#fhir-ig-publisher) &#124; [validator-wrapper](#validator-wrapper) &#124; [kindling](#kindling) &#124; [HL7/FHIR](#hl7fhir) &#124; [HAPI-FHIR](#hapi-fhir) &#124; [IG registry](#ig-registry)
 
 -----------------------------------------------------------------------
 
@@ -21,21 +21,20 @@ You may find that the test cases, data models, or utilities you are working on a
 
 ## fhir-test-cases
 
-This project contains cases that can be used to test FHIR reference implementations/validators. These test cases are imported as a dependency and included in the tests run when building the [org.hl7.fhir.core](#orghl7fhircore) artifacts.
+{% include overview-fhir-test-cases.md %}
 
-### Repository
-[https://github.com/FHIR/fhir-test-cases/](https://github.com/FHIR/fhir-test-cases/)
+These test cases are imported as a dependency and included in the tests run when building the [org.hl7.fhir.core](#orghl7fhircore) artifacts.
 
 ### Dependent Projects
 - [org.hl7.fhir.core](#orghl7fhircore)
 
-
 ## org.hl7.fhir.core
 
-This is the java core object handling code. It includes Java models of all FHIR resources, as well as utilities (including the FHIR validator) for the FHIR specification. The models and utilities in this code are imported as a dependencies and used for several dependent FHIR projects. This project uses the test cases definied in [fhir-test-cases](#fhir-test-cases).
+{% include overview-org-hl7-fhir-core.md %}
 
-### Repository
-[https://github.com/hapifhir/org.hl7.fhir.core](https://github.com/hapifhir/org.hl7.fhir.core)
+The models and utilities in this code are imported as a dependencies and used for several dependent FHIR projects. 
+
+This project uses the test cases defined in [fhir-test-cases](#fhir-test-cases).
 
 ### Dependencies
 - [fhir-test-cases](#fhir-test-cases)
@@ -47,45 +46,39 @@ This is the java core object handling code. It includes Java models of all FHIR 
 
 ## fhir-ig-publisher
 
-This is the code for the HL7 IG publisher: a tool to take a set of inputs and create a standard FHIR IG. This tool uses the models, validation, and utilities contained in [org.hl7.fhir.core](#orghl7fhircore).
+{% include overview-fhir-ig-publisher.md %}
 
-### Repository
-[https://github.com/HL7/fhir-ig-publisher/](https://github.com/HL7/fhir-ig-publisher/)
+This tool uses the models, validation, and utilities contained in [org.hl7.fhir.core](#orghl7fhircore).
 
 ### Dependencies
 - [org.hl7.fhir.core](#orghl7fhircore)
 
 ## validator-wrapper
 
-This project contains the CLI, Desktop GUI, and Standalone Validation Server for the FHIR Validator. These are all wrappers around the validation code contained in [org.hl7.fhir.core](#orghl7fhircore).
+{% include overview-validator-wrapper.md %}
 
-A publicly hosted instance of the Web interface for this validator is available here: https://validator.fhir.org/
-
-### Repository
-[https://github.com/hapifhir/org.hl7.fhir.validator-wrapper/](https://github.com/hapifhir/org.hl7.fhir.validator-wrapper/)
+These are all wrappers around the validation code contained in [org.hl7.fhir.core](#orghl7fhircore).
 
 ### Dependencies
 - [org.hl7.fhir.core](#orghl7fhircore)
 
 ## kindling
 
-This is the core publishing code for the HL7 FHIR specification itself. The jar produced from this repository is used within the [HL7/FHIR](#hl7-fhir) project to take the spreadsheet data in that project and generate a fully publishable web page containing all necessary URLs and their content for the HL7 FHIR specification.
+{% include overview-kindling.md %}
 
-### Repository
-[https://github.com/HL7/kindling](https://github.com/HL7/kindling)
+The jar produced from this repository is used within the [HL7/FHIR](#hl7-fhir) project.
 
 ### Dependencies
 - [org.hl7.fhir.core](#orghl7fhircore)
 
 ### Dependent Projects
-- [HL7/FHIR](#hl7-fhir)
+- [HL7/FHIR](#hl7fhir)
 
 ## HL7/FHIR
 
-This project contains the spreadsheet files that define the current version of the HL7 FHIR specification, as well as a simple publishing utility. The publishing utility uses [kindling](#kindling) to process these spreadsheets and build a fully publishable web page containing all necessary URLs and their content for the HL7 FHIR specification.
+{% include overview-hl7-fhir.md %}
 
-### Repository
-[https://github.com/HL7/fhir](https://github.com/HL7/fhir)
+The publishing utility uses the JAR produced by the [kindling](#kindling) project.
 
 ### Dependencies
 - [kindling](#kindling) 
@@ -107,7 +100,7 @@ HAPI FHIR is a complete implementation of the HL7 FHIR standard for healthcare i
 ### ig-registry
 
 Registry of published implementation guides.
-This registry is published for human convenience at https://registry.fhir.org/guides
+This registry is published for human convenience at [https://registry.fhir.org/guides](https://registry.fhir.org/guides)
 
 **Repository**
 
