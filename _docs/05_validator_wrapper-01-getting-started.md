@@ -12,6 +12,6 @@ toc: true
 
 {% include prerequisites-git.md project-git-link='https://github.com/hapifhir/org.hl7.fhir.validator-wrapper.git' %}
 
-{% include prerequisites-gradle-idea.md project-name='org.hl7.fhir.validator-wrapper' project-directory='org.hl7.fhir.validator-wrapper' %}
+{% include prerequisites-gradle-idea.md project-name='org.hl7.fhir.validator-wrapper' project-directory='org.hl7.fhir.validator-wrapper' project-is-lombok='false'%}
 
-{% include prerequisites-gradle-eclipse.md project-name='org.hl7.fhir.validator-wrapper' project-directory='org.hl7.fhir.validator-wrapper' %}
+{% include prerequisites-gradle-eclipse.md project-name='org.hl7.fhir.validator-wrapper' project-directory='org.hl7.fhir.validator-wrapper' project-is-lombok='false'%}

@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with IG Publisher"
-permalink: /docs/ig_publisher/getting-started/
+permalink: /docs/ig_publisher/getting-started
 excerpt: "How to set up your local IDE to build the FHIR IG Publisher."
 last_modified_at: 2021-06-23
 toc: true

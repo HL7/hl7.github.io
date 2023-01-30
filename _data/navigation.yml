@@ -62,6 +62,10 @@ docs:
         url: /docs/validator-wrapper/running
       - title: "hosting the validator"
         url: /docs/validator-wrapper/hosting
+  - title: kindling
+    children:
+      - title: "getting started"
+        url: /docs/kindling/getting-started
   - title: HL7/fhir
     children:
       - title: "getting started"
