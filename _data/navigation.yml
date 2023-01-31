@@ -69,11 +69,11 @@ docs:
   - title: HL7/fhir
     children:
       - title: "getting started"
-        url: /docs/fhir/getting-started/
+        url: /docs/fhir/getting-started
       - title: "building the specification"
-        url: /docs/fhir/building-the-spec/
+        url: /docs/fhir/building-the-spec
       - title: "fhir github branches"
-        url: /docs/fhir/github-branches/
+        url: /docs/fhir/github-branches
   - title: CI/CD
     url: /docs/ci-cd
     children:
