@@ -1,8 +1,8 @@
 ---
 title: "Getting started with HL7/fhir"
 permalink: /docs/fhir/getting-started/
-excerpt: "How to set up your local IDE to build the HL7/fhir."
-last_modified_at: 2021-04-26
+excerpt: "How to set up your local IDE to build HL7/fhir."
+last_modified_at: 2023-02-16
 toc: true
 ---
 

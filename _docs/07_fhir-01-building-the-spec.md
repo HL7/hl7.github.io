@@ -2,7 +2,7 @@
 title: "Building the Specification"
 permalink: /docs/fhir/building-the-spec/
 excerpt: "How to local build the fhir specification."
-last_modified_at: 2021-04-26
+last_modified_at: 2023-01-18
 toc: true
 ---
 

@@ -2,7 +2,7 @@
 title: "Getting started with kindling"
 permalink: /docs/kindling/getting-started
 excerpt: "How to set up your local IDE to build kindling."
-last_modified_at: 2021-04-26
+last_modified_at: 2023-01-30
 toc: true
 ---
 

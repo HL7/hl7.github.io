@@ -2,7 +2,7 @@
 title: "Getting Started with fhir-test-cases"
 permalink: /docs/fhir-test-cases/getting-started
 excerpt: "How to set up your local IDE to build the FHIR test cases."
-last_modified_at: 2022-06-15
+last_modified_at: 2023-01-30
 toc: true
 ---
 

@@ -2,7 +2,7 @@
 title: "Overview of the HL7 Core Projects"
 permalink: /docs/core-libs/overview
 excerpt: "Overview of the HL7 Core Projects."
-last_modified_at: 2023-01-27
+last_modified_at: 2023-01-30
 toc: true
 ---
 

@@ -2,7 +2,7 @@
 title: "Hosting your own validator-wrapper"
 permalink: /docs/validator-wrapper/hosting
 excerpt: "How to stand up your own validator-wrapper server."
-last_modified_at: 2021-04-27
+last_modified_at: 2022-02-04
 toc: true
 ---
 There may be a case where you are working with sensitive data, but still wish to take advantage of the new validator-wrapper website ui.

@@ -2,7 +2,7 @@
 title: "validator-wrapper"
 permalink: /docs/validator-wrapper/running
 excerpt: "How to locally run the validator-wrapper."
-last_modified_at: 2021-04-27
+last_modified_at: 2022-09-27
 toc: true
 ---
 ## Running Locally
