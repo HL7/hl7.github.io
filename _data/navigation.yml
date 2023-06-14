@@ -39,6 +39,8 @@ docs:
     children:
       - title: "getting started"
         url: /docs/fhir-test-cases/getting-started
+      - title: "developing test cases"
+        url: /docs/fhir-test-cases/developing-test-cases
   - title: org.hl7.fhir.core
     children:
       - title: "getting started"
