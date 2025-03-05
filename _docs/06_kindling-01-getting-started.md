@@ -16,6 +16,6 @@ toc: true
 
 {% include prerequisites-git.md project-git-link='https://github.com/HL7/kindling.git' %}
 
-{% include prerequisites-gradle-idea.md project-name='kindling' project-directory='kindling'%}
+{% include prerequisites-maven-idea.md project-name='kindling' project-directory='kindling'%}
 
-{% include prerequisites-gradle-eclipse.md project-name='kindling' project-directory='kindling'%}
+{% include prerequisites-maven-eclipse.md project-name='kindling' project-directory='kindling'%}
