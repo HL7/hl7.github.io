@@ -18,7 +18,7 @@ Though individual projects in the HL7 core libraries can be worked on independen
 
 
 ### Creating a multi-project workspace
-To load multiple projects in IntelliJ IDEA, you can use a single parent directory to contain multiple projects. To illustrate how this is done, we will use the example of loading, both the [org.hl7.fhir.core](/docs/core/ide) project and the [kindling]() project in the same workspace.
+To load multiple projects in IntelliJ IDEA, you can use a single parent directory to contain multiple projects. To illustrate how this is done, we will use the example of loading, both the [org.hl7.fhir.core](/docs/core/ide) project and the [fhir]() project in the same workspace.
 
 To begin, we will create a parent directory called `fhir-projects` and use git to clone both projects.
 
@@ -53,7 +53,7 @@ You should now see both your projects in the `Project Files` panel. Though these
 
 ### Importing multiple projects
 
-Projects must be added or linked depending on the project build system used for each project. `org.hl7.fhir.core` is a Maven project, and `kindling` is a Gradle project. The `README.md` file in each project directory will describe the build system used. 
+Projects must be added or linked depending on the project build system used for each project. `org.hl7.fhir.core` is a Maven project, and `fhir` is a Gradle project. The `README.md` file in each project directory will describe the build system used. 
 
 
 #### Maven Projects
@@ -111,7 +111,7 @@ Working with projects that are dependent upon each other can often be frustratin
 
 ### Loading Multiple Projects in Eclipse
 
-To illustrate how this is done, we will use the example of loading, both the [org.hl7.fhir.core](/docs/core/ide) project and the [kindling]() project in the same workspace.
+To illustrate how this is done, we will use the example of loading, both the [org.hl7.fhir.core](/docs/core/ide) project and the [fhir]() project in the same workspace.
 
 To begin, we will clone these two projects using Git.
 
@@ -124,7 +124,7 @@ Once these projects are cloned, you will be able to import them into Eclipse.
 
 Run eclipse and select your Eclipse workspace.
 
-Projects must be imported in a different way depending on the project build system used for each project. `org.hl7.fhir.core` is a Maven project, and `kindling` is a Gradle project. The `README.md` file in each project directory will describe the build system used.
+Projects must be imported in a different way depending on the project build system used for each project. `org.hl7.fhir.core` is a Maven project, and `fhir` is a Gradle project. The `README.md` file in each project directory will describe the build system used.
 
 #### Maven Projects
 
