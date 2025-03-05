@@ -26,14 +26,14 @@ To begin, we will create a parent directory called `fhir-projects` and use git t
 $ mkdir fhir-projects
 $ cd fhir-projects
 $ git clone https://github.com/hapifhir/org.hl7.fhir.core.git
-$ git clone https://github.com/HL7/kindling.git
+$ git clone https://github.com/HL7/fhir.git
 ```
 
 This gives us a directory that looks like the following:
 
 ```
  fhir-projects
- ├ kindling	
+ ├ fhir	
  └ org.hl7.fhir.core
 ```
 
@@ -69,7 +69,7 @@ For details about building and using different features of each project, read th
 
 #### Gradle Projects
 
-To link a Gradle project such as `kindling` in IDEA, use the following steps:
+To link a Gradle project such as `fhir` in IDEA, use the following steps:
 
 - Using the `Project Files` panel, find the `build.gradle.kts` file at the root of the project.
 - Right click on the `build.gradle.kts` file and select `Link Gradle Project` from the context menu.
@@ -87,11 +87,10 @@ Working with projects that are dependent upon each other can often be frustratin
 - Ensure that you are working with a consistent SNAPSHOT version of each project in your workspace. For example, if you are working with version `5.6.93-SNAPSHOT` of the `org.hl7.fhir.core` project, you should ensure that dependent projects such as `kindling`, `fhir-publisher`, etc. are all using this version.
 - Ensure that you have built and installed projects that other projects may be dependent upon. This can be done using the command line, or by using the `Maven` and `Gradle` panels in IDEA.
    - Maven: `mvn install`
-   - Gradle: `gradlew publishMavenJavaPublicationToMavenLocal`
 - Ensure that dependent Maven projects are being built with the most recent dependencies.
-   - Find your project in the `Maven` panel.
-   - Right click on your project and select `Reload Project` from the context menu.
-   - Alternatively, in the terminal you can build with the following options: `mvn clean install -U`
+  - Find your project in the `Maven` panel.
+  - Right click on your project and select `Reload Project` from the context menu.
+  - Alternatively, in the terminal you can build with the following options: `mvn clean install -U`
 - Ensure that dependent Gradle projects are being built with the most recent dependencies.
    - Find your project in the `Gradle` panel.
    - Right click on your project and select `Refresh Gradle Dependencies` from the context menu.
@@ -118,7 +117,7 @@ To begin, we will clone these two projects using Git.
 
 ```shell
 $ git clone https://github.com/hapifhir/org.hl7.fhir.core.git
-$ git clone https://github.com/HL7/kindling.git
+$ git clone https://github.com/HL7/fhir.git
 ```
 
 Once these projects are cloned, you will be able to import them into Eclipse.
@@ -170,7 +169,6 @@ Working with projects that are dependent upon each other can often be frustratin
 - Ensure that you are working with a consistent SNAPSHOT version of each project in your workspace. For example, if you are working with version `5.6.93-SNAPSHOT` of the `org.hl7.fhir.core` project, you should ensure that dependent projects such as `kindling`, `fhir-publisher`, etc. are all using this version.
 - Ensure that you have built and installed projects that other projects may be dependent upon. This can be done using the command line, or in Eclipse by using the `Build` menu for Maven projects or `Gradle Tasks` panel for Gradle projects.
   - Maven: `mvn install` or `Build -> Build Project` (if `Build Automatically` isn't selected)
-  - Gradle: `gradlew publishMavenJavaPublicationToMavenLocal` or `Gradle Tasks -> Publishing -> publishMavenJavaPublicationToMavenLocal`
 - Ensure that dependent Maven projects are being built with the most recent dependencies.
   - Find your project in the `Package Explorer` panel.
   - Right click on your project and select `Maven -> Update Project` from the context menu.
