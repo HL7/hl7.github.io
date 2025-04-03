@@ -62,6 +62,8 @@ docs:
         url: /docs/validator-wrapper/building
       - title: "running the validator"
         url: /docs/validator-wrapper/running
+      - title: "configuring the validator"
+        url: /docs/validator-wrapper/configuring
       - title: "hosting the validator"
         url: /docs/validator-wrapper/hosting
   - title: kindling
