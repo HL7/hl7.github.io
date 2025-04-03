@@ -118,19 +118,78 @@ The application is packaged with a default configuration file, `application.conf
 `src/jvmMain/resources/application.conf` in the source code, which uses a json-based format called HOCON 
 (Human-Optimized Config Object Notation).
 
-
-
 You can override this file by setting the `VALIDATOR_CONFIG_FILE_PATH` environment variable to a path specifying a new 
 configuration. Any values supplied by the new configuration will override the default values provided by the packaged 
 `application.conf`.
 
+For example, the following configuration file will set the development port to `6000`, while leaving all other settings 
+unchanged:
+
+```hocon
+ktor {
+    deployment {
+        dev {
+            port = 6000
+        }
+    }
+}
+```
 
 ## Presets
 
+The application can keep a set of validation engine instances in memory for use in common validation tasks. These are 
+normally selected using the 'Common Validation Options' box in the web interface. When one of these presets is selected 
+the application uses a copy of the existing engine instead of building a new instance. Building a new engine is a time 
+intensive process, while copying is not.
 
-[Link-ValidatorWrapperWeb]: https://validator.fhir.org/
-[Link-GradleWebpage]: https://gradle.org/
-[Link-GradleKotlinDSLPrimer]: https://docs.gradle.org/current/userguide/kotlin_dsl.html
-[Link-GradleInstall]: https://gradle.org/install/
-[Link-GradleWrapper]: https://docs.gradle.org/current/userguide/gradle_wrapper.html
-[Link-ValidatorConfluence]: https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator
+The application is packaged with a set of default presets, which are defined in `src/jvmMain/resources/presets.json`
+
+You can use your own preset file by setting the `VALIDATION_SERVICE_PRESETS_FILE_PATH` environment variable. 
+
+```hocon
+[
+  # A list of presets.
+  {
+    "key": # the key that identifies this preset in the web interface,
+    "localizedLabels": {
+      # a map of key and value pairs for each language you wish to support.
+      "en" : # the localized label for the preset. 
+    },
+    "cliContext": {
+      # defines the validation engine as it should be provided by the validation service
+      "baseEngine": # the key that identifies this engine on the server,
+      "sv": # the version of FHIR to use for this engine,
+      "igs": [
+        # a list of IGs using "name#version" format to be loaded by the engine
+      ],
+      "extensions": [
+        # a list of extensions to include in the engine
+      ],
+      "checkIPSCodes": # true if the IPS codes should be checked during validation,
+      "bundleValidationRules": [
+        # a list of bundle validation rules
+        {
+          "rule": # The resource type or index (or both) of the entry to validate,
+          "profile": # the canonical URL of the profile to use to validate the entry
+        }
+      ]
+    },
+    "igPackageInfo": [
+      # a detailed list of IG packages to be used for validation
+      # this has the same content as the "igs" field, but provides necessary information for the web interface
+      {
+        "id": # the ID of the IG,
+        "version": # the version of the IG,
+        "fhirVersion": # this FHIR version of the IG,
+        "url": # the canonical URL of the IG
+      }
+    ],
+    "extensionSet": [
+      # a list of extensions to be used for validation
+    ],
+    "profileSet": [
+      # a list of canonical URLs of profiles to be used for validation
+    ]
+  }
+]
+```
