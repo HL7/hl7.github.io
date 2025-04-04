@@ -6,7 +6,8 @@ last_modified_at: 2025-04-02
 toc: true
 ---
 ## ENVIRONMENT Variables
-There are several environment variables that can configure validator-wrapper functionality.
+There are several environment variables that can configure validator-wrapper functionality. When not set, the
+application will use default values.
 
 Normally these can be set as follows:
 
@@ -19,10 +20,13 @@ export SESSION_CACHE_SIZE=6
 ```bat
 set SESSION_CACHE_SIZE=6
 ```
+These must be set before the application is started in order to take effect. Details on starting the application are 
+available [here](/docs/validator-wrapper/running). 
 
 ### ktor
 
-Ktor is the server which provides the back end for the application.
+Ktor is the server which provides the back end for the application. The following environment variables configure 
+aspects of the ktor server. 
 
 {% include env-variable.md
 name='KTOR_DEPLOYMENT_ENVIRONMENT'
@@ -37,34 +41,36 @@ name='KTOR_DEPLOYMENT_DEV_HOST'
 description='an http/https host name'
 default-value='0.0.0.0' %}
 
-Sets the host for the ktor server when in `dev` mode.
+Sets the host for the ktor server when run in the `dev` environment.
 
 {% include env-variable.md
 name='KTOR_DEPLOYMENT_DEV_PORT'
 description='an http/https port number'
 default-value='8082' %}
 
-Sets the port for the ktor server when in `dev` mode.
+Sets the port for the ktor server when run in the `dev` environment.
 
 {% include env-variable.md
 name='KTOR_DEPLOYMENT_PROD_HOST'
 description='an http/https host name'
 default-value='0.0.0.0' %}
 
-Sets the host for the ktor server when in `prod` mode.
+Sets the host for the ktor server when run in the `prod` environment.
 
 {% include env-variable.md
 name='KTOR_DEPLOYMENT_PROD_PORT'
 description='an http/https port number'
 default-value='3500' %}
 
-Sets the port for the ktor server when in `prod` mode.
+Sets the port for the ktor server when run in the `prod` environment.
 
 ### Session Caching 
 
-When users submit a validation, a validation engine is created and persisted in the session cache. If the user submits 
-more data for validation, and their options are unchanged, the cache provides the engine instead of creating a new one.
+When users submit a validation, a validation engine is created and persisted in memory in the session cache. If the user 
+submits more data for validation and their options are unchanged, the cache provides this existing engine instead of 
+creating a new one.
 
+The following environment variables configure aspects of session caching behaviour.
 
 {% include env-variable.md
 name='SESSION_CACHE_IMPLEMENTATION'
@@ -96,27 +102,34 @@ the cache in "last accessed last out" order.
 
 ### Validation Service
 
+The validation service creates and manages the validation engines used to validate user data. 
+
+The following environment variables configure aspects how and when validation engines are created.
+
 {% include env-variable.md 
 name='VALIDATION_SERVICE_PRESETS_FILE_PATH' 
 description='any valid file path' 
 default-value='(empty)' %}
 
-This sets the path to a valid validation service presets file. See [Presets](#presets)
+This sets the path to a valid validation service presets file. Presets provide a faster way of validating data for some 
+common validation cases. This file allows the application to customise the available cases. See [Presets](#presets) for
+details on the format of the file.
 
 {% include env-variable.md
 name='VALIDATION_SERVICE_ENGINE_RELOAD_THRESHOLD'
 description='a positive integer or 0'
 default-value='250000000' %}
 
-A value in bytes that represents the threshold for available memory that triggers a reload of the validation engine. 
-This can be useful if overly resource hungry engines are being generated, but may result in degraded services or missed 
+A value in bytes that represents the threshold for available memory that triggers a reload of all validation engines. 
+This complete reload will free any memory that was used by those engines. This can be useful if overly resource hungry 
+engines are being generated and degrading performance, but may result in temporarily degraded services or missed 
 validation results.
 
 ## Configuration File
 
 The application is packaged with a default configuration file, `application.conf`, located  at 
 `src/jvmMain/resources/application.conf` in the source code, which uses a json-based format called HOCON 
-(Human-Optimized Config Object Notation).
+(Human-Optimized Config Object Notation). 
 
 You can override this file by setting the `VALIDATOR_CONFIG_FILE_PATH` environment variable to a path specifying a new 
 configuration. Any values supplied by the new configuration will override the default values provided by the packaged 
@@ -135,16 +148,23 @@ ktor {
 }
 ```
 
+There are many aspects of the ktor server that can be configured outside of the documentation here. A more complete 
+guide to ktor configuration can be found in the 
+[ktor documentation}(https://ktor.io/docs/server-configuration-file.html#configuration-file-overview)].
+
 ## Presets
 
 The application can keep a set of validation engine instances in memory for use in common validation tasks. These are 
 normally selected using the 'Common Validation Options' box in the web interface. When one of these presets is selected 
 the application uses a copy of the existing engine instead of building a new instance. Building a new engine is a time 
-intensive process, while copying is not.
+intensive process, while copying an existing one is not.
 
-The application is packaged with a set of default presets, which are defined in `src/jvmMain/resources/presets.json`
+The application is packaged with a set of default presets, which are defined in `src/jvmMain/resources/presets.json`. 
+The contents of this file can be used to provide examples of how to create your own preset file.
 
 You can use your own preset file by setting the `VALIDATION_SERVICE_PRESETS_FILE_PATH` environment variable. 
+
+The code below provides commentary on the structure and expected content of the preset file. 
 
 ```hocon
 [
