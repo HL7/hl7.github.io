@@ -6,16 +6,27 @@ last_modified_at: 2021-06-23
 toc: true
 ---
 ## Background
-Implementation guides require templates to build. When you build an ig implementation guide, one of the three parameters
-you provide is the id of the template to use. In general, the template ID generally points to one of 
-[these templates][Link-GithubTemplatesDirectory].
 
-During publishing of your IG, when you define which template you want to use, you can specify a version. This version can
-be either one of the release versions, or current. It is important to understand the distinction between the two. 
-**Current** is the latest mutable CI build. If you label the IG as current it grabs the latest package off of 
-[build.fhir.org][Link-BuildFhirOrg]. Otherwise, if you can specify one of the built versions in the 
-[template directory][Link-GithubTemplatesDirectory]. If you don’t specify a specific version, you will get the latest,
-immutable, published version.
+Implementation guides built by the IG publisher require templates to build. The IG Publisher starts 
+by examining the parameters and locating the file ig.ini. The ig.ini provides two pieces of information
+to the publisher: the name of the IG resource to process, and the template to use. 
+
+## Identifying templates
+
+Templates are identified by two pieces of information `{package-id}(#{version})`:
+
+* the package id for the template 
+* the version of the package to use
+
+If no version for the package is provided, the default version is the latest release found on the 
+package servers. The special version `current` means to use the version of the template found on 
+the HL7 maintained ci-build.
+
+Templates are resolved using the normal package infrastructure, and can be released in any suitable 
+way that other packages are released. However, most templates are released through the 
+[templates directory][Link-GithubTemplatesDirectory]. While packages don't need to released this way, 
+if they are, a tool manages republishing packages whenever their dependencies change, and this is 
+much easier for users than managing this manually. 
 
 ## Moving Parts
 
@@ -34,6 +45,9 @@ you're going to see a bunch of different built templates, each with their own su
 - ihe.fhir.template
 - fhir.base.template
 ```
+
+(and more - added occasionally)
+
 Each of these directories contains a list of published versions, each with their own sub-directory. For example, if we
 look in [fhir.base.template][Link-GithubFhirBaseTemplateDir], you should see a list of directories for the published
 versions, including `0.0.2`, `0.1.0`, `0.1.1`, and so on. These directories contain the [Jekyll][Link-Jekyll] html file,

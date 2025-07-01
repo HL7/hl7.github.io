@@ -7,12 +7,18 @@ toc: true
 ---
 
 ## Background
-On [fhir.org][Link-FhirDotOrg] there is a [registry][Link-FhirDotOrgRegistry] of published implementation guides for 
-users to browse. One of the more popular exapmles of this would be the [US Core Implmentation Guide][Link-UsCoreIG].
 
-These guides are maintained by the community, however, once changes are made and committed to the appropriate 
-repositories, these updates then need to be released as versioned, web source files that can be displayed as part of the
-[registry][Link-FhirDotOrgRegistry]. This is done through a series of defined steps.
+On [fhir.org][Link-FhirDotOrg] there is a [registry][Link-FhirDotOrgRegistry] of published implementation guides for 
+users to browse. One of the more popular examples of this would be the [US Core Implmentation Guide][Link-UsCoreIG].
+These guides are maintained by the community, by making changes to [the master registry](https://github.com/FHIR/ig-registry/blob/master/fhir-ig-list.json).
+
+There are also packages and IGs that are published directly on fhir.org. These fir into tqo categories:
+
+* Normal FHIR IGs that are published in `fhir.org` on behalf of the community
+* A set of packages that support FHIR Implementation that are not associated with implementation guides
+
+This documentation relates to the second category. Packages are added to this list (or removed) by the 
+FHIR Product Director. 
 
 ## Moving Parts
 
