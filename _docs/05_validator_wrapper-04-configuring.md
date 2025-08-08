@@ -175,7 +175,7 @@ The code below provides commentary on the structure and expected content of the 
       # a map of key and value pairs for each language you wish to support.
       "en" : # the localized label for the preset. 
     },
-    "cliContext": {
+    "validationContext": {
       # defines the validation engine as it should be provided by the validation service
       "baseEngine": # the key that identifies this engine on the server,
       "sv": # the version of FHIR to use for this engine,
