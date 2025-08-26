@@ -2,18 +2,20 @@
 title: "validator-wrapper"
 permalink: /docs/validator-wrapper
 excerpt: "The validator-wrapper project."
-last_modified_at: 2021-04-27
+last_modified_at: 2025-08-26
 toc: true
 ---
 
-This project contains the CLI, Desktop GUI, and Standalone Validation Server for the FHIR Validator.
+This project contains the Standalone Validation Server and Desktop GUI for the FHIR Validator.
 
 ## About the Project
 
 The code for this project is located in the [hapifhir][Link-GithubRepo] organization.
 
-The validator CLI will still be generated and hosted as normal within the [hapifhir/core.hl7.fhir.core][Link-CoreGithubLatestRelease]
-_for now_. Be advised that, eventually, we will stop publishing the cli as part of the core, and users will be expected to download the cli jar from the [latest release][Link-ValidatorWrapperGithubLatestRelease] of this project.
+You can download the validator-wrapper.jar from the [latest release][Link-ValidatorWrapperGithubLatestRelease] of this project.
+
+The terminal only validator CLI is still available via [hapifhir/core.hl7.fhir.core][Link-CoreGithubLatestRelease]
+
 {: .notice--info}
 
 ### Build Status

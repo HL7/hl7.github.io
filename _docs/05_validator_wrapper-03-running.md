@@ -2,7 +2,7 @@
 title: "validator-wrapper"
 permalink: /docs/validator-wrapper/running
 excerpt: "How to locally run the validator-wrapper."
-last_modified_at: 2022-09-27
+last_modified_at: 2025-08-26
 toc: true
 ---
 ## Running Locally
@@ -20,13 +20,8 @@ wrapped instance of the KotlinJS front end within a Chromium web window to appea
 wrapped website should mimic all the same functionality of the full KotlinJS website in the full-stack hosted server.
 Once the Chromium browser window is closed, the local Ktor server is also shutdown.
 
-### As the traditional validator cli:
-We realize that for many users, the cli is still the primary way in which validation is performed, so we've made
-it possible to still execute this jar, as done previously, from the command line. All validator cli functionality
-remains as detailed [on the confluence wiki][Link-ValidatorConfluence].
-
 **Note:** If you attempt to run this as both a full-stack server and a locally hosted application (by including both the
-`startServer` and `-gui` commands from the cli, the full-stack server takes priority, and the desktop version will
+`startServer` and `-gui` commands from the cli), the full-stack server takes priority, and the desktop version will
 not be booted.
 {: .notice--warning}
 
